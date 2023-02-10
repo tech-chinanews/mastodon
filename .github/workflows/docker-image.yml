@@ -28,7 +28,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: chinanews/mastodon
           tags: v4.0.2-chinanews-st
-          file: Dockerfile_staticfiles
+          dockerfile: Dockerfile_staticfiles
 
   # docker-build-static-files:
   #   runs-on: ubuntu-latest
