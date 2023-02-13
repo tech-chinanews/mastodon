@@ -5,7 +5,7 @@ ARG NODE_VERSION="16.18.1-bullseye-slim"
 FROM ghcr.io/moritzheiber/ruby-jemalloc:3.0.4-slim as ruby
 FROM node:${NODE_VERSION} as build
 
-COPY --link --from=ruby /opt/ruby /opt/ruby
+COPY --from=ruby /opt/ruby /opt/ruby
 
 ENV DEBIAN_FRONTEND="noninteractive" \
     PATH="${PATH}:/opt/ruby/bin"
