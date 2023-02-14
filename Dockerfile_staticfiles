@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1.4
 FROM sourceimage AS Builder
 
 FROM nginx:1.21.4-alpine
