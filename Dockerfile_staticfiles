@@ -1,4 +1,4 @@
-FROM chinanews/mastodon:v4.0.2-chinanews AS Builder
+FROM sourceimage AS Builder
 
 FROM nginx:1.21.4-alpine
 COPY --from=Builder /opt/mastodon/public /usr/share/nginx/html
