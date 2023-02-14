@@ -33,4 +33,4 @@ jobs:
           tags: v4.1.0-chinanews-st
           file: Dockerfile_staticfiles
           build-contexts: |
-            sourceimage=v4.1.0-chinanews
+            sourceimage=chinanews/mastodon:v4.1.0-chinanews
