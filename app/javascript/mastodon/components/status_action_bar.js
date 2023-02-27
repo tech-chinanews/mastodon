@@ -203,6 +203,7 @@ class StatusActionBar extends ImmutablePureComponent {
   };
 
   handleOpen = () => {
+    // alert(123);
     this.context.router.history.push(`/@${this.props.status.getIn(['account', 'acct'])}/${this.props.status.get('id')}`);
   };
 
@@ -273,6 +274,7 @@ class StatusActionBar extends ImmutablePureComponent {
     }
 
     if (writtenByMe) {
+      //console.log(permissions, PERMISSION_MANAGE_USERS, PERMISSION_MANAGE_FEDERATION); /// 用户权限，在app/javascript/mastodon/permission.js中定义
       menu.push({ text: intl.formatMessage(messages.edit), action: this.handleEditClick });
       menu.push({ text: intl.formatMessage(messages.delete), action: this.handleDeleteClick });
       menu.push({ text: intl.formatMessage(messages.redraft), action: this.handleRedraftClick });
