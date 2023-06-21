@@ -5,8 +5,8 @@ require 'mime/types/columnar'
 module Attachmentable
   extend ActiveSupport::Concern
 
-  # MAX_MATRIX_LIMIT = 16_777_216 # 4096x4096px or approx. 16MB
-  MAX_MATRIX_LIMIT = 26_214_400
+  MAX_MATRIX_LIMIT = 16_777_216 # 4096x4096px or approx. 16MB
+  # MAX_MATRIX_LIMIT = 26_214_400
   GIF_MATRIX_LIMIT = 921_600    # 1280x720px
 
   # For some file extensions, there exist different content
