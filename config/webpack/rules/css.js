@@ -7,21 +7,21 @@ module.exports = {
     {
       loader: 'css-loader',
       options: {
-        sourceMap: true,
+        sourceMap: false,
         importLoaders: 2,
       },
     },
     {
       loader: 'postcss-loader',
       options: {
-        sourceMap: true,
+        sourceMap: false,
       },
     },
     {
       loader: 'sass-loader',
       options: {
         implementation: require('sass'),
-        sourceMap: true,
+        sourceMap: false,
       },
     },
   ],
