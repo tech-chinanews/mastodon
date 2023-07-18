@@ -23,7 +23,7 @@ module.exports = merge(sharedConfig, {
       new TerserPlugin({
         cache: true,
         parallel: true,
-        sourceMap: false,
+        sourceMap: true,
       }),
     ],
   },
