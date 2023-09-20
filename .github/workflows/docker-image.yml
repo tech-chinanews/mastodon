@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: chinanews/mastodon:v4.1.6-chinanews
+          tags: chinanews/mastodon:v4.1.8-chinanews
 
 #      - name: Push to Docker Hub Static Files
 #        uses: docker/build-push-action@v2
