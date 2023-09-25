@@ -3,9 +3,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ chinanews ]
+    branches: [ chinanews-v4.2.0 ]
   pull_request:
-    branches: [ chinanews ]
+    branches: [ chinanews-v4.2.0 ]
 
 jobs:
   docker-build:
