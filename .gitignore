@@ -27,6 +27,8 @@
 .env.development
 /node_modules/
 /build/
+.yarn/
+.yarnrc
 
 # Ignore Vagrant files
 .vagrant/

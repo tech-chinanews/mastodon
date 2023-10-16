@@ -3,9 +3,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ chinanews-v4.2.0 ]
+    branches: [ chinanews-v4.2.x ]
   pull_request:
-    branches: [ chinanews-v4.2.0 ]
+    branches: [ chinanews-v4.2.x ]
 
 jobs:
   docker-build:
@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: chinanews/mastodon:v4.2.0-chinanews
+          tags: chinanews/mastodon:v4.2.1-chinanews
 
 #      - name: Push to Docker Hub Static Files
 #        uses: docker/build-push-action@v2
